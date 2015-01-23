@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+#container {
+  position: relative;
+  font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","MS Gothic","ＭＳ ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 3.1rem;
+  /*text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;*/
+  line-height: 2rem;
+  text-rendering: optimizelegibility; }
+
+h2 {
+  font-size: 2.2rem;
+  text-rendering: optimizelegibility;
+  margin-bottom: 0px;
+  line-height: 2.8rem; }
+
+h3 {
+  font-size: 1.4rem;
+  text-rendering: optimizelegibility;
+  line-height: 2.8rem; }
+
+/*.btn {
+  background-color: #f80079; }*/
+
+
+
+
+
+@media screen and (max-width: 599px) {
+    /* 幅600px未満
+       スマホの横持ちくらいまで対応 */
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    /* 幅480px〜800px
+       タブレット端末と小さなラップトップ用 */
+}
+
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+    /* 幅800px〜1100px
+       デスクトップマシンを使っている人用 */
+}
+
+@media screen and (min-width: 1100px) {
+    /* 幅1100px以上
+       デスクトップマシンを使っててブラウザを贅沢に広げる人用 */
+}

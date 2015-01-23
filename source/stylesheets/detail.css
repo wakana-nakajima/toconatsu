@@ -1,0 +1,152 @@
+/*body*/
+
+.detail {
+  margin-top: 4rem;
+  background-color: #edefed; }
+
+  .row {
+    width: 80%; }
+
+    .plan-all {
+      padding-left: 0px!important;
+      padding-right: 2px!important; }
+
+    .plan-ticket {
+      text-align: center;
+      margin-top: 1.1rem; }
+
+      .button-area {
+        padding-left: 0px!important;
+        padding-right: 4px!important; }
+
+      .plan-button {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 6px;
+        color: #f80079;
+        background-color: #ffffff;
+        height: 60px;
+        font-weight: bold;
+        float: left!important;
+        margin-bottom: 4px; }
+
+    .plan-detail {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      padding-left: 2.2rem!important;
+      padding-right: 2.2rem!important; }  
+
+    p.strong {
+      font-weight: bold;
+      color: #4f4f4f;
+      font-size: 1.4rem; }
+
+    .wish-list {
+    
+       }      
+
+      .wish-text {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #4f4f4f;
+        float: left;
+        font-weight: bold; }
+
+        .wish-icon {
+          margin-top: 3rem;
+          /*vertical-align: middle;
+          line-height: 50%;*/
+        }
+
+
+      /*slick.css*/
+
+      .slick-slider {
+        margin-bottom: 0px; }
+
+      .slick-prev {
+        height: 4.6rem;
+        left: 2rem; }
+
+      .slick-next {
+        height:4.6rem;
+        right: 2rem; }
+
+      .slick-prev:before, .slick-next:before { 
+        font-family: "slick"; 
+        font-size: 4.6rem; 
+        line-height: 1; 
+        color: #ffffff; 
+        opacity: 0.75;
+        -webkit-font-smoothing: antialiased; 
+        -moz-osx-font-smoothing: grayscale; }   
+
+      .slick-prev:before { 
+        content: "‹"; }
+
+      [dir="rtl"] 
+      .slick-prev:before { 
+        content: "›"; }
+
+      [dir="rtl"] 
+      .slick-next { 
+        left: -50px; 
+        top: 70px; 
+        right: auto; }
+      
+      .slick-next:before { 
+        content: "›";
+        margin-right: 3rem!important;  }
+
+      [dir="rtl"] 
+      .slick-next:before { 
+        content: "‹";
+        margin-left: 3rem!important;  }
+
+      /*/slick.css*/
+
+
+/*    .photo-area {
+      padding-right: 2rem; }*/
+
+    .plan-photo {
+      padding-left: 0px!important;
+      padding-right: 0px!important;
+      width: 100%; }
+
+    .plan-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #4f4f4f; }
+
+    .plan-text {
+      font-size: 1rem;
+      margin-top: 1.2rem; }
+
+    
+
+      .title-area {
+        padding-left: 0px!important;  }
+
+      .notice-title {
+        font-weight: bold;
+        color: #4f4f4f; }
+
+      .symbol-icon {
+        float: left; 
+        margin-top: 4px;
+        margin-right: 10px; 
+        color: #808080;
+   /*     font-size: 0.2rem;*/}
+
+      .reserv-title {
+        text-align: center;
+        font-weight: bold;
+        color: #4f4f4f;
+        font-size: 1.3rem;}
+
+
+
+
+

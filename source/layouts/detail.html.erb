@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title><%= data.page.title %></title>
+    <meta name="keywords" content="<%= data.page.keywords %>">
+    <meta name="description" content="<%= data.page.description %>">
+    <!-- slick css -->
+    <%= stylesheet_link_tag "materialize", "all", "header", "footer", "detail", "slick" %>
+    <!-- /slick css --> 
+    <!-- slick js-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <!-- /slick js-->
+
+    <%= stylesheet_link_tag "materialize", "all", "header", "footer", "detail" %>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+    <%= javascript_include_tag  "all", "materialize" %>
+  </head>
+  
+  <body>  
+    <%= partial "layouts/header" %><!-- パーシャル機能で、_header.erbを読み込む -->
+    <div id="container">
+      <%= yield %><!-- ページコンテンツを反映 -->
+    </div>
+    <%= partial "layouts/footer" %><!-- パーシャル機能で、_footer.erbを読み込む --> 
+  </body>
+</html>
