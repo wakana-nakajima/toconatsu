@@ -11,40 +11,56 @@ headline: インデックスファイルの見出し
       %h1.text-jumbo.hide-on-small-only とっておきの沖縄体験
       %h1.text-jumbo-small.hide-on-med-and-up とっておきの沖縄体験
       <!-- Dropdown Trigger -->
-      %a.dropdown-button.btn.waves-effect.waves-light.top-button{ href:'index.html.haml', 'data-activates' => 'dropdown1' }場所を検索
+      
+      %a.dropdown-button.btn.top-button{ "data-constrainwidth" => "false", "data-alignment" => "right", href: "index.html.haml", "data-activates" => "dropdown1" }場所を検索
       <!-- Dropdown Structure -->
+      / .container.hide-on-med-and-up{ id: 'dropdown1', class: 'dropdown-content-small' }
       .container{ id: 'dropdown1', class: 'dropdown-content' }
-        .areaname 本島北部
-        %li 
-          %a{ href: "#!" }名護市
-        %li 
-          %a{ href: "#!" }今帰仁村
-        %li 
-          %a{ href: "#!" }恩納村
-        %li 
-          %a{ href: "#!" }本部町
-        %li.divider
-        .areaname 本島中部
-        %li
-          %a{ href: "#!" }うるま市
-        %li 
-          %a{ href: "#!" }北谷町
-        %li 
-          %a{ href: "#!" }読谷村
-        %li 
-          %a{ href: "#!" }嘉手納町
-        %li 
-          %a{ href: "#!" }宜野湾市        
-        %li 
-          %a{ href: "#!" }浦添市
-        %li.divider
-        .areaname 本島南部
-        %li
-          %a{ href: "#!" }那覇市
-        %li
-          %a{ href: "#!" }糸満市
-        %li
-          %a{ href: "#!" }南城市
+        .row.dropdown-contents
+          .col.l12.text-position  
+            .col.s6.m3.l3
+              .areaname 本島北部
+              %li 
+                %a{ href: "#!" }名護市
+              %li 
+                %a{ href: "#!" }今帰仁村
+              %li 
+                %a{ href: "#!" }恩納村
+              %li 
+                %a{ href: "#!" }本部町
+              
+            .col.s6.m3.l3
+              .areaname 本島中部
+              %li
+                %a{ href: "#!" }うるま市
+              %li 
+                %a{ href: "#!" }北谷町
+              %li 
+                %a{ href: "#!" }読谷村
+              %li 
+                %a{ href: "#!" }嘉手納町
+              %li 
+                %a{ href: "#!" }宜野湾市        
+              %li 
+                %a{ href: "#!" }浦添市
+              
+            .col.s6.m3.l3
+              .areaname 本島南部
+              %li
+                %a{ href: "#!" }那覇市
+              %li
+                %a{ href: "#!" }糸満市
+              %li
+                %a{ href: "#!" }南城市
+             
+            .col.s6.m3.l3
+              .areaname  離島
+              %li
+                %a{ href: "#!" }石垣島
+              %li
+                %a{ href: "#!" }宮古島
+              %li
+                %a{ href: "#!" }西表島
         / .row  
         /   .col.s12.m6.l3 本島南部
         /   .col.s12.m6.l3 本島中部
@@ -266,7 +282,18 @@ headline: インデックスファイルの見出し
             .text-center.text-contrast.va-container.hide-on-large-only
               .va-middle.hide-on-large-only
                 .h2.strong 今帰仁村
-                   
+
 :javascript 
   $(document).ready(function(){
     $('.dropdown-button').dropdown();});
+
+:javascript
+  $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: false // Activate on click
+      alignment: 'left', // Aligns dropdown to left or right edge (works with constrain_width)
+      gutter: 0, // Spacing from edge
+    }
+  );

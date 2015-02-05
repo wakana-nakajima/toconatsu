@@ -1,0 +1,102 @@
+---
+layout: purchase
+title: 決済画面
+keywords: Purchase
+description:  決済画面ファイルです。
+headline: 決済画面ファイルの見出し
+---
+.purchase
+  .row
+    .col.l12.m12.s12 
+      %p.strong ダイビングツアー
+    .col.s12.m12.l12.card.input-area
+      .col.l6
+        .input-field.col.l6
+          %input#first_name{ type: "text", class: "validate" }
+          %label{ for: "first_name" }姓
+        .input-field.col.l6
+          %input#last_name{ type: "text", class: "validate" }
+          %label{ for: "last_name" }名
+        .input-field.col.l12
+          %input#mail{ type: "text", class: "validate" }
+          %label{ for: "mail" }メールアドレス
+        .input-field.col.l12
+          %input#tel{ type: "text", class: "validate" }
+          %label{ for: "tel" }電話番号
+        / .col.l6
+        /   %label.stacked-label 名前
+        /   %input.stacked-input{ type: "text", name: "first-name", placeholder: "first name", required: "required" }
+        / .col.l6
+        /   %label.stacked-label 　  
+        /   %input.stacked-input{ type: "text", name: "last-name", placeholder: "last name", required: "required" }
+        / .col.l12
+        /   %label.stacked-label メールアドレス　  
+        /   %input.stacked-input{ type: "text", name: "mailaddress", placeholder: "mail", required: "required" }
+        / .col.l12
+        /   %label.stacked-label 電話番号　  
+        /   %input.stacked-input{ type: "text", name: "phone-number", placeholder: "phone", required: "required" }
+      .col.l6
+        .col.l12
+          %label.stacked-label クレジットカード番号　  
+          %input.stacked-input{ type: "text", name: "creditcard-number", placeholder: "0000 0000 0000 0000", required: "required" }
+        .col.l3
+          %label.stacked-label カード期限　  
+          %select.stacked-input#exp-month{ name: "exp_month", required: "required" }
+            %option{ value: "1月" }１月
+            %option{ value: "2月" }２月
+            %option{ value: "3月" }３月
+            %option{ value: "4月" }４月
+            %option{ value: "5月" }５月
+            %option{ value: "6月" }６月
+            %option{ value: "7月" }７月
+            %option{ value: "8月" }８月
+            %option{ value: "9月" }９月
+            %option{ value: "10月" }１０月
+            %option{ value: "11月" }１１月
+            %option{ value: "12月" }１２月
+        .col.l3
+          %label.stacked-label　　  
+          %select.stacked-input#exp-year{ name: "exp_year", required: "required" }
+            %option{ value: "2015" }2015
+            %option{ value: "2016" }2016
+            %option{ value: "2017" }2017
+            %option{ value: "2018" }2018
+            %option{ value: "2019" }2019
+            %option{ value: "2020" }2020
+            %option{ value: "2021" }2021
+            %option{ value: "2022" }2022
+            %option{ value: "2023" }2023            
+        .col.l2
+          %p
+        .col.l4
+          %label.stacked-label セキュリティコード
+          %input.stacked-input{ type: "text", name: "security-code", required: "required",placeholder: "000" }
+        .col.12
+          %p.divider
+          %img.credit-card{ src: "../images/img_card.png" }
+    .col.l12
+      .col.l9
+        %p
+      .col.l3
+        .btn.waves-effect.waves-light.btn-continue 確認画面へ  >>
+         
+    
+
+    / .col.s12.m12.l4.plan-all
+    /   .col.s12.m12.l12
+    /     .card
+    /       .card-image
+    /         %img{ src: "../images/plans/img_diving.png" }
+    /       .card-content 
+    /         %p.small-title プランの重要な詳細
+    /         %p.divider 
+    /         %p.small-title キャンセルポリシー：
+    /         %p 24時間前まで
+    /         %p.small-title 利用条件：
+    /         %p ダイビング体験は５歳未満のお子様にはお勧めしません。
+    /         %p.small-title 開催場所：
+    /         %p 説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります
+    /       .card-action
+    /         %a{ href: "index.html" }トコナツヘルプデスクにメールする
+    /         %p.or または
+    /         %p.or 03-3221-5086に電話する

@@ -6,16 +6,16 @@
     <meta name="keywords" content="<%= data.page.keywords %>">
     <meta name="description" content="<%= data.page.description %>">
     <!-- slick css -->
-    <%= stylesheet_link_tag  "materialize", "all", "header", "footer", "categories", "slick" %>
-    <!-- /slick css --> 
+    <%= stylesheet_link_tag  "materialize", "all", "header", "footer", "categories", "slick", "datepicker" %>
+    <!-- /slick css -->
+
     <!-- slick js-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>
     <!-- /slick js-->
 
-    <%= stylesheet_link_tag  "materialize", "all", "header", "footer", "categories" %>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
-    <%= javascript_include_tag  "all", "materialize" %>
+    <%= javascript_include_tag  "all", "materialize", "bootstrap-datepicker" %>
   </head>
   
   <body>  
@@ -26,3 +26,5 @@
     <%= partial "layouts/footer" %><!-- パーシャル機能で、_footer.erbを読み込む --> 
   </body>
 </html>
+
+

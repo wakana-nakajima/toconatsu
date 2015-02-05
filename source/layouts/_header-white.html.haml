@@ -1,0 +1,19 @@
+%header{ id: "header"}
+  %nav
+    .nav-wrapper
+      %a{ href: "index.html.haml", class: "brand-logo" }
+        %img{ src: "../images/logo.png"}
+      %a.button-collapse{ href: "#", "data-activates" => "nav-mobile" }
+        %i{ class: "mdi-navigation-menu" }
+      %ul#nav-mobile{ class: "right side-nav" }
+        %li
+          %a.text-black{ href: "sass.html" }サポート
+        %li
+          %a.text-black{ href: "components.html" }お気に入り
+        %li
+          %a.text-black{ href: "javascript.html" }サインイン
+    %a{ class: "button-collapse", href: "#", "data-activates" => "nav-mobile" }
+
+:javascript
+  $(".button-collapse").sideNav();
+  

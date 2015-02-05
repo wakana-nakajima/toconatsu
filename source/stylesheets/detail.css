@@ -1,11 +1,13 @@
 /*body*/
 
 .detail {
-  margin-top: 4rem;
-  background-color: #edefed; }
+  padding-top: 4rem;
+  background-color: #f4f4f4; 
+  position: relative;}
 
   .row {
-    width: 80%; }
+    width: 88%;
+    margin-bottom: 0!important; }
 
     .plan-all {
       padding-left: 0px!important;
@@ -13,11 +15,13 @@
 
     .plan-ticket {
       text-align: center;
-      margin-top: 1.1rem; }
+      margin-top: 1.1rem;
+      position: relative; }
 
       .button-area {
         padding-left: 0px!important;
-        padding-right: 4px!important; }
+        padding-right: 4px!important;
+        position: relative; }
 
       .plan-button {
         width: 100%;
@@ -34,30 +38,35 @@
     .plan-detail {
       background-color: #ffffff;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      padding-left: 2.2rem!important;
-      padding-right: 2.2rem!important; }  
+      padding-left: 1rem!important;
+      padding-right: 1rem!important; }  
 
     p.strong {
       font-weight: bold;
       color: #4f4f4f;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;s}
 
-    .wish-list {
-    
-       }      
+      .wish-list {
+        text-align: right;
+        margin-top: 3rem;}
+
+      .sns-btn p {
+        text-align: right;
+        margin-top: -1.5rem;
+        margin-bottom: 0!important;
+      }
 
       .wish-text {
-        margin-top: 1rem;
         font-size: 1rem;
         color: #4f4f4f;
-        float: left;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #f80079;
+        cursor: pointer; }
 
         .wish-icon {
           margin-top: 3rem;
-          /*vertical-align: middle;
-          line-height: 50%;*/
-        }
+          margin-top: 2em!important;
+          color: #f80079;}
 
 
       /*slick.css*/
@@ -104,7 +113,7 @@
         content: "‹";
         margin-left: 3rem!important;  }
 
-      /*/slick.css*/
+      /*/slick.css end*/
 
 
 /*    .photo-area {
@@ -138,13 +147,125 @@
         margin-top: 4px;
         margin-right: 10px; 
         color: #808080;
-   /*     font-size: 0.2rem;*/}
+        font-size: 0.2rem;}
 
       .reserv-title {
         text-align: center;
         font-weight: bold;
         color: #4f4f4f;
         font-size: 1.3rem;}
+
+
+      /*<-- tab.cssの変更css -->*/
+/*
+    [type="radio"]:checked {
+      left: 0px!important; }
+
+    [type="radio"]:not(:checked) {
+      left: 0px!important; }
+
+    .panel-radios {
+      position: static!important; }
+
+    .plan-container {
+      margin: 0 auto;
+      width: 90%; }
+
+    #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
+      background-color: #fff;
+      color: ##C0392B;
+      padding-top: 26px;
+    }
+  ul#tabs-list li label.panel-label {
+    position: relative;
+    padding: 24px 0;
+  }
+  label.panel-label {
+    -webkit-user-select: none;
+    display: block;
+    width: 100%;
+    transition-duration: 200ms;
+    transition-property: height;
+  }
+  #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+    pointer-events: none;
+    cursor: default;
+    transform: translate3d(0, 1px, 0);
+    box-shadow: none;
+    border-right: none;
+  }
+  ul#tabs-list li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+  }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+  }
+  #panel-1-ctrl:checked ~ #panels #panel-1 main {
+    max-height: initial!important;
+    opacity: 1;
+    padding: 48px 24px;
+  }
+  #panels section main {
+    box-sizing: border-box;
+    border-box: opacity 600ms;
+    overflow-y: hidden;
+    max-height: 100%!important;
+    opacity: 1;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto!important;
+  }*/
+
+    /*<-- tab.cssの変更css end-->*/
+
+    .recommend {
+      line-height: 2rem;
+      color: #f80079; }
+
+    .plan-image {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 220px;
+      margin-bottom: 25px;
+      line-height: 0; 
+      border-radius: 0px;}
+
+      .va-container {
+        display: table;
+        width: 100%;
+        height: 100%; }
+
+        .text-contrast {
+          color: #fff; }
+
+        .text-center {
+        text-align: center; }
+
+          .va-middle {
+            vertical-align: bottom;
+            display: table-cell; 
+            padding-bottom: 10px;}
+
+            .h3.strong {
+              font-weight: bold; 
+              font-size: 1.2rem;
+              line-height: 1.1;
+              text-rendering: optimizelegibility;
+              text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;
+              padding-left: 10px;}
+
+            .h4 {
+              font-size: 1rem;
+              line-height: 1.1;
+              text-rendering: optimizelegibility;
+              text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;
+              padding-left: 10px; 
+              padding-top: 3px;}
 
 
 
