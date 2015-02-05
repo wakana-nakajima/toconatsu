@@ -8,7 +8,7 @@ padding: 144px 0;
 background: linear-gradient( rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09) ), url('../images/img_video.png') no-repeat center center ;
 /*pointer-events: none;*/
 background-size: cover;
-height: 400px;
+height: 280px;
 box-shadow: 0px 2px 2px rgba(0,0,0,0.4);
 position: relative;
 /*z-index: -100; }*/ }
@@ -24,11 +24,6 @@ position: relative;
     z-index: 100;
     text-align: center; }
 
-    .tag-title {
-      color: white;
-      letter-spacing: 3px;
-      /*font-size: 48px;*/
-      line-height: 1; }
 
     .one-line-text {
       overflow: overflow;
@@ -36,15 +31,21 @@ position: relative;
       white-space: nowrap; }
 
       .tag-title-pink {
-        color: #f80079;
+        color: #f80079; }  
+
+      .tag-title {
+         color: white;
+        letter-spacing: 3px;
         font-size: 36px;
         font-weight: 900; 
         text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;  
-        -webkit-font-smoothing: antialiased; }  
+        -webkit-font-smoothing: antialiased;
+        line-height: 1;　}
 
-      .tag-title {
-        letter-spacing: 3px;
-        font-size: 36px;
+      .tag-title-small {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 26px;
         font-weight: 900; 
         text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;  
         -webkit-font-smoothing: antialiased;
@@ -88,6 +89,12 @@ section {
           line-height: 0; 
           border-radius: 0px;}
 
+
+          .va-container :hover {
+            box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+            } 
+          
+
           .va-container {
             display: table;
             width: 100%;
@@ -128,15 +135,16 @@ section {
             margin-bottom: 0.6rem;
             color: #565a5c; }
 
-          .btn {
-            background-color: #f80079;}
+          .more-btn {
+            font-size: 1rem!important;}
 
           .recommend {
             line-height: 2rem;
             color: #f80079; }
 
           .recommend-area {
-            padding: 0.6rem; }
+            padding: 0.6rem;
+            height: 280px; }
 
           /*/recommend*/
 

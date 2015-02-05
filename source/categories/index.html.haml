@@ -11,82 +11,88 @@ headline: カテゴリ一覧ファイルの見出し
       %h2.text-experience ワクワクする体験をしよう
       %h3.text-place in石垣島
     .bottom-search-area.hide-sm
-      .row#datedatedate
-        .col.l1#date-date
-          %div
-          %p.date 日程：
-        .col.l1
-          %input{ type: "date", class: "datepicker" }
-        .col.l1
-          %input{ type: "date", class: "datepicker" }
-        .col.l2
-          %div
-          %p.date 興味のあるもの：
-        .col.l1
-          / %label Materialize Select
-          %select
-            / %option{ value: "" "disabled selected"; }Choose your option 
-            %option{ value: "1" }Option 1
-            %option{ value: "2" }Option 1
-            %option{ value: "3" }Option 1
-        .col.l2 
-          %p
-          %a.waves-effect.waves-light.btn 検索
-        .col.l2
-          %p
-          %a.waves-effect.waves-light.btn 今週体験可能なプラン
+      .row
+        .col.l9.datedatedate
+          .col.s4.l1
+            %p.tag 日程：
+          .col.s4.l2.date
+            %input.date-input{ type: "date", class: "datepicker", readonly: "readonly", placeholder: "from" }
+          .col.s4.l2.date
+            %input.date-input{ type: "date", class: "datepicker", placeholder: "to" }
+          .col.s6.l2.interested
+            %p.tag 興味のあるもの：
+          .col.s6.l3.plans
+            %select.stacked-input{ name: "interesting" }
+              %option{ value: "1" }子供と一緒に遊べる
+              %option{ value: "2" }パドリングレッスン
+              %option{ value: "3" }ウォータースポーツ
+              %option{ value: "4" }文化に触れる
+              %option{ value: "5" }ナイトライフ
+              %option{ value: "6" }癒し
+              %option{ value: "1" }低価格
+              %option{ value: "2" }グループで遊べる
+              %option{ value: "3" }グルメツアー
+              %option{ value: "4" }トレッキング
+              %option{ value: "5" }名所観光ツアー
+          .col.s12.l2.search-btn
+            %p
+            %a.waves-effect.waves-light.btn 検索
+        .col.l3.week-plan  
+          .col.s12.l12
+            %p
+            %a.waves-effect.waves-light.btn.week-btn 今週体験可能なプラン >>
 
 
 %section
   .row
     .section-intro
       %h3.title.strong 石垣島で人気のアクティビティ
-      .col.s12.m12.l12
-        .autoplay
+      .col.s12.m12.l12.slider-frame
+        .autoplay.slider-bottom
           .col.s12.m6.l3
-            %a.link-reset.va-container.waves-effect.waves-light{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container.waves-effect.waves-light{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_seacayac.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong 親子で1日シーカヤック体験 
                     .h4 オーシャンズ石垣島
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_glass.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong プランタイトル 
                     .h4 ショップ名
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_flyfishing.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong プランタイトル 
                     .h4 ショップ名
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_river.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong プランタイトル
                     .h4 ショップ名
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_diving.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong プランタイトル 
                     .h4 ショップ名
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_sisi.png');" }
                 .text-contrast.va-container
                   .va-middle
                     .h3.strong プランタイトル
                     .h4 ショップ名
           .col.s12.m6.l3
-            %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+            %a.link-reset.va-container{ href: "detail/index.html" }
               .slide-list{ style: "background-image: url('../images/plans/img_asretic.png');" }
                 .text-contrast.va-container
                   .va-middle
@@ -98,12 +104,12 @@ headline: カテゴリ一覧ファイルの見出し
       .col.s12.m6.l4
         .card 
           .card-action
-            %a{ href: "#" }プランタイトル
+            %a{ href: "../plans/index.html.haml" }プランタイトル
             %i{ class: "mdi-navigation-arrow-forward" }
-          .card-image{ href: "index.html.haml" }
-            %img{ src:"../images/categories/img_trecking.png" }
+          .card-image{ href: "plans/index.html.haml" }
+            %img.activator{ src:"../images/categories/img_trecking.png" }
       .col.s12.m6.l4
-        .card 
+        .card
           .card-action
             %a{ href: "#" }プランタイトル
             %i{ class: "mdi-navigation-arrow-forward" }
@@ -174,3 +180,9 @@ headline: カテゴリ一覧ファイルの見出し
   $('.datepicker').pickadate();
 :javascript
   $('select').material_select();
+:javascript
+  $(function() {
+    $('#dp2').datepicker({
+      format: 'dd/mm/yyyy'
+      language: 'ja',       // カレンダー日本語化のため
+  });

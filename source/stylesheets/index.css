@@ -44,32 +44,44 @@ position: relative;
       margin-top: 0.8rem;
       width: 20rem; }
 
+/*dropdown*/
+
     .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #FFFFFF;
-/*      margin: 0px;
-      min-width: 100px;*/
-      z-index: 1000;
-      /*max-height: 70%;*/
-      opacity: 1;
-      overflow-y: hidden;
-      will-change: width, height; }
-      .dropdown-content {
-        cursor: pointer;
-        font-size: 1.2rem;
-        color: rgba(0, 0, 0, 0.87);
-        /*line-height: 1.5rem;*/ }
+      display: block;
+      padding: 0rem 0rem!important;
+      width: 32rem!important;
+      padding-right: 0!important;
+      margin-left: -5rem!important;
+      padding-right: 0rem!important; }
+
+      .dropdown-content a{
+        font-size: 1rem!important;
+        color: #f80079;
+        padding: 0.3rem 1rem!important; }
+        
         .dropdown-content :hover {
-          background-color: rgba(0, 0, 0, 0.06); }
-        .dropdown-content {
-          display: block;
-          /*padding: 1rem 1rem;*/
-          /*height:160rem;*/ 
-          text-align: center;
-          /*width: 160rem;*/}  
-        .areaname :hover{
-          background-color: #ffffff;}
+          background-color: rgba(0, 0, 0, 0); }
+        
+        .areaname {
+          color: #4f4f4f;
+          margin-top:  1rem;
+          margin-left: 0.8rem;
+          background-color: #ffffff;
+          font-size: 1rem;
+          font-weight: bold; }
+        
+        .dropdown-contents {
+          width: 100%!important;
+          text-align: center; 
+          padding-right: 0rem!important;
+          margin-right: 0rem!important;}
+
+        .text-position {
+          text-align: left!important;}  
+
+
+
+/*/dropdown*/
 
 section { 
   background-color: #edefed; }
@@ -129,7 +141,8 @@ section {
 
       .size-wide {
         padding-left: 8px!important;
-        padding-right: 8px!important; }
+        padding-right: 8px!important;
+        border: none!important; }
 
         .card {
           background-size: cover;
@@ -137,7 +150,9 @@ section {
           position: relative;
           height: 196px;
           margin-bottom: 9px;
-          line-height: 0; }
+          line-height: 0;
+          border: none!important;
+          border-radius: 0!important; }
 
           .card-wide {
             background-size: cover;
@@ -145,12 +160,19 @@ section {
             position: relative;
             height: 280px;
             margin-bottom: 0px;
-            line-height: 0; }
+            line-height: 0; 
+            border: none!important;}
 
           .va-container {
             display: table;
             width: 100%;
-            height: 100%; }
+            height: 100%; 
+            border: none!important;}
+
+          .card:hover {
+            box-shadow:0 12px 15px 0 rgba(0, 0, 0, 0.28), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+            }
+
 
             .text-contrast {
               color: #fff; }

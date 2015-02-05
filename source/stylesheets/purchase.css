@@ -1,0 +1,116 @@
+/*body*/
+
+.purchase {
+  background-color: #f4f4f4;
+  padding-top: 4rem;
+  position: relative; }
+
+  .row {
+    width: 80%;
+    margin-bottom: 0rem!important; }
+
+    .input-area {
+      padding: 1.4rem!important;
+      margin: 0 0 1.4rem 0rem!important;}
+
+      label.stacked-label { 
+        display: block;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: SofiaProRegular,"Helvetica Neue","Helvetica",Arial,sans-serif;
+        text-align: left;
+        padding: 0px; 
+        color: #4f4f4f;}
+
+      .stacked-input {
+        border: 1px solid #b7b7b7!important;
+        padding: .25em .5em!important;
+        margin: .5em 0em!important;
+        border-radius: 5px 5px 5px 5px; 
+        height: 1.6rem!important; }
+
+  /*    input[type=text]:focus {
+        border: 1px solid #f80079!important;
+        box-shadow: 0 0 0.3rem #f80079!important;  }*/
+
+      input[type=text]:focus {
+        border: 0 0 1px 0 solid #f80079!important; }
+
+
+      .inline-input {
+        margin-right: .5em; }
+
+      select.stacked-input {
+        background-color: #ffffff!important;
+        display: inherit!important;
+        border: 1px solid #b7b7b7!important;
+        padding: .25em .5em!important;
+        margin: .5em 0em!important;
+        border-radius: 5px 5px 5px 5px; 
+        height: 1.6rem!important; }
+
+      select.stacked-input:focus {
+        border: 1px solid #f80079!important;
+        box-shadow: 0 0 0.3rem #f80079!important; }
+
+      .credit-card {
+        width: 20rem; }
+
+      .btn-continue {
+        width: 100%!important;
+        height: 3rem;
+        font-size: 1.4rem;
+        padding-top: 0.2em;}
+
+        
+
+
+
+
+    .plan-all {
+      padding-left: 0px!important;
+      padding-right: 2px!important; }
+
+      p.or {
+      margin: 0.6rem 0; }
+
+      p.strong {
+      font-weight: bold;
+      color: #4f4f4f;
+      font-size: 1.4rem; }
+
+      p.small-title {
+        font-weight: bold;
+        color: #4f4f4f!important;
+        font-size: 1rem;
+        margin: 1.1rem 0!important;
+        padding: 0 0.75rem; }
+
+      .card a {
+        color: #f80079; }
+
+/*form*/
+
+.credit {
+  border:0!important;
+  padding:10px!important;
+  height: 1.4rem!important;
+  font-size:1.3em!important;
+  font-family:Arial, sans-serif!important;
+  color:#aaa!important;
+  border:solid 1px #ccc!important;
+  margin:0 0 20px!important;
+  -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2)!important;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2)!important;
+  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2)!important; }
+
+ /* input:focus {
+    border:solid 1px #EEA34A!important;
+}*/
+
+
+
+
+
+
+

@@ -1,100 +1,194 @@
 ---
 layout: detail
-title: プラン詳細一覧一覧
+title: プラン詳細一覧
 keywords: Detail
-description: プラン詳細一覧一覧ファイルです。
+description: プラン詳細一覧ファイルです。
 headline: プラン詳細一覧ファイルの見出し
 ---
 .detail
   .row
     .col.s12.m12.l8.plan-all
-      .col.s12.m12.l12
-        .col.s6.m6.l6
+      .col.s12.m12.l12.plan-all
+        .col.s6.m6.l6.plan--all
           %p.strong ダイビングツアー
-        .col.s6.m6.l6
-          %a.wish-list     
-            %a.wish-text ウィッシュリストに追加する
-            %i.mdi-action-favorite.wish-icon
-        .col.s12.m12.l12
-          .single-item
-            .plan-photo
-              %img{ src: "../images/plans/img_diving.png", style: "width:  100%;" }
-            .plan-photo
-              %img{ src: "../images/plans/img_sisi.png", style: "width:  100%;" }
-            .plan-photo
-              %img{ src: "../images/plans/img_diving.png", style: "width:  100%;" }
-            .plan-photo
-              %img{ src: "../images/plans/img_seacayac.png", style: "width:  100%;" }  
-        .col.s12.m12.l12  
-          .plan-ticket  
-            .col.s12.m12.l6.button-area
-              %a.btn.btn-large.plan-button 青の洞窟体験ダイビング　¥5,800  
-            .col.s12.m12.l6.button-area
-              %a.btn.btn-large.plan-button 青の洞窟１日ダイビング　¥9,800  
-            .col.s12.m12.l6.button-area
-              %a.btn.btn-large.plan-button 青の洞窟体験ダイビング　¥5,800  
-            .col.s12.m12.l6.button-area
-              %a.btn.btn-large.plan-button 青の洞窟１日ダイビング　¥9,800  
-          .col.l9.plan-detail    
-            .plan-text プランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入ります  
-            %p.divider
-              .col.l4.title-area
-                %i.small.mdi-action-query-builder.symbol-icon
-                %p.notice-title 所要時間
-              .col.l8
-                %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
-              .col.l4.title-area
-                %i.small.mdi-notification-event-note.symbol-icon
-                %p.notice-title 開催日
-              .col.l8
-                %p.notice-text 夏季〜11月中旬
-              .col.l4.title-area
-                %i.small.mdi-social-group.symbol-icon
-                %p.notice-title 人数
-              .col.l8
-                %p.notice-text 1人〜6人
-              .col.l4.title-area
-                %i.small.mdi-action-assignment-ind.symbol-icon
-                %p.notice-title 対象年齢
-              .col.l8
-                %p.notice-text 8歳〜68歳
-              .col.l4.title-area
-                %i.small.mdi-notification-sms-failed.symbol-icon
-                %p.notice-title 持ち物
-              .col.l8
-                %p.notice-text 持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物
-              .col.l4.title-area
-                %i.small.mdi-action-room.symbol-icon
-                %p.notice-title 開催場所について
-              .col.l8
-                %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
-              .col.l4.title-area
-                %i.small.mdi-av-new-releases.symbol-icon
-                %p.notice-title キャンセルポリシー
-              .col.l8
-                %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります  
-              .col.l4.title-area
-                %i.small.mdi-action-favorite.symbol-icon
-                %p.notice-title 安全に関する情報
-              .col.l8
-                %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります 
-          .col.l3.plan-detail
-            .reserv-card
-              %p.reserv-title 予約する
+        .col.s6.m6.l6.wish-list 
+          %a.wish-text{ href: "index.html" } ウィッシュリストに追加する
+          %i.mdi-action-favorite.wish-icon
     .col.s12.m12.l4.plan-all
-      .col.s12.m12.l12  
-        .sns-btn
-        %p.strong aaa
+    .col.s12.m12.l8
+      .single-item
         .plan-photo
-          %img.hide-on-small-only{ src: "../images/img_video.png", style: "width: 359px;" "height: 260px;" }
-          %img.hide-on-med-and-up{ src: "../images/img_video.png", style: "width: 297px;" "height: 200px;" }
-        %a{ href: "#", style: "width:  100%;"}
-          %img.hide-on-small-only{ src: "../images/img_gopro.png"}
-          %img.hide-on-med-and-up{ src: "../images/img_gopro_small.png"}
-        %p.divider
-        .plan-title 青の洞窟ダイビングツアーについて
-        .plan-text プランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入ります
+          %img{ src: "../images/plans/img_diving.png", style: "width:  100%;" }
+        .plan-photo
+          %img{ src: "../images/plans/img_sisi.png", style: "width:  100%;" }
+        .plan-photo
+          %img{ src: "../images/plans/img_diving.png", style: "width:  100%;" }
+        .plan-photo
+          %img{ src: "../images/plans/img_seacayac.png", style: "width:  100%;" }  
+      
+      .col.s12.m12.l12.plan-ticket    
+        <!-- TAB CONTROLLERS -->   
+        .col.s12.m12.l6.button-area
+          %input{ id: "panel-1-ctrl",class: "panel-radios", type: "radio", name: "tab-radios", checked: "checked" }青の洞窟体験ダイビング　¥5,800  
+        .col.s12.m12.l6.button-area
+          %input{ id: "panel-2-ctrl",class: "panel-radios", type: "radio", name: "tab-radios" } 青の洞窟１日ダイビング　¥9,800  
+        .col.s12.m12.l6.button-area
+          %input{ id: "panel-3-ctrl",class: "panel-radios", type: "radio", name: "tab-radios" } 青の洞窟体験ダイビング　¥5,800  
+        .col.s12.m12.l6.button-area
+          %input{ id: "panel-4-ctrl",class: "panel-radios", type: "radio", name: "tab-radios" } 青の洞窟１日ダイビング　¥9,800 
+        
+        <!-- TABS LIST --!>
+        %ul#tabs-list  
+          <!-- MENU TOGGLE --!>
+          %label{ id: "open-nav-label", for: "nav-ctrl" }
+          %li{ id: "li-for-panel-1" }
+            %label{ class: "panel-label", for: "panel-1-ctrl" }タブ 1
+            <!--INLINE-BLOCK FIX-->
+          %li{ id: "li-for-panel-2" }
+            %label{ class: "panel-label", for: "panel-2-ctrl" }タブ 2
+            <!--INLINE-BLOCK FIX-->
+          %li{ id: "li-for-panel-3" }
+            %label{ class: "panel-label", for: "panel-3-ctrl" }タブ 3
+            <!--INLINE-BLOCK FIX-->
+          %li{ id: "li-for-panel-4" }
+            %label{ class: "panel-label", for: "panel-4-ctrl" }タブ 4
+            <!--INLINE-BLOCK FIX-->
+          %label{ id: "close-nav-label", for: "nav-ctrl" }Close
 
+        <!-- THE PANELS -->
+        %article{ id: "panels" }
+          .plan-container
+            %section{ id: "panel-1" }
+              %main
+                .col.l9.explain-area.plan-detail
+                  .plan-text プランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入りますプランの概要が入ります  
+                  %p.divider
+                  .col.l4.title-area
+                    %i.small.mdi-action-query-builder.symbol-icon
+                    %p.notice-title 所要時間
+                  .col.l8
+                    %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+                  .col.l4.title-area
+                    %i.small.mdi-notification-event-note.symbol-icon
+                    %p.notice-title 開催日
+                  .col.l8
+                    %p.notice-text 夏季〜11月中旬
+                  .col.l4.title-area
+                    %i.small.mdi-social-group.symbol-icon
+                    %p.notice-title 人数
+                  .col.l8
+                    %p.notice-text 1人〜6人
+                  .col.l4.title-area
+                    %i.small.mdi-action-assignment-ind.symbol-icon
+                    %p.notice-title 対象年齢
+                  .col.l8
+                    %p.notice-text 8歳〜68歳
+                  .col.l4.title-area
+                    %i.small.mdi-notification-sms-failed.symbol-icon
+                    %p.notice-title 持ち物
+                  .col.l8
+                    %p.notice-text 持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物持ち物
+                  .col.l4.title-area
+                    %i.small.mdi-action-room.symbol-icon
+                    %p.notice-title 開催場所について
+                  .col.l8
+                    %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+                  .col.l4.title-area
+                    %i.small.mdi-av-new-releases.symbol-icon
+                    %p.notice-title キャンセルポリシー
+                  .col.l8
+                    %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります  
+                  .col.l4.title-area
+                    %i.small.mdi-action-favorite.symbol-icon
+                    %p.notice-title 安全に関する情報
+                  .col.l8
+                    %p.notice-text 説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+                .col.l3
+                  .reserv-card
+                    %p.reserv-title 予約する  
+            %section{ id: "panel-2" }
+              %main
+                %p コンテンツ2
+            %section{ id: "panel-3" }
+              %main
+                %p コンテンツ3
+            %section{ id: "panel-4" }
+              %main
+                %p コンテンツ4 
+            
+    .col.l4 
+      .sns-btn
+        %p facebook twitter pinterest
+      .plan-photo
+        %img.hide-on-small-only{ src: "../images/img_video.png", style: "width: 400px;" "height: 260px;" }
+        %img.hide-on-med-and-up{ src: "../images/img_video.png", style: "width: 352px;" "height: 200px;" }
+      %a{ href: "#", style: "width:  100%;"}
+        %img.hide-on-small-only{ src: "../images/img_gopro.png"}
+        %img.hide-on-med-and-up{ src: "../images/img_gopro_small.png"}
+      %p.divider
+      .plan-title 青の洞窟ダイビングツアーについて
+      .plan-text プランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入りますプランの説明が入ります
+    .col.l8
+      %p.strong ダイビングツアーに似ているアクティビティ
+      .col.s12.m6.l6
+        %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+          .card.plan-image{ style: "background-image: url('../images/plans/img_seacayac.png');" }
+            .text-contrast.va-container
+              .va-middle
+                .h3.strong 親子で1日シーカヤック体験 
+                .h4 オーシャンズ石垣島
+      .col.s12.m6.l6
+        %a.link-reset.va-container{ href: "/s/Seoul--South-Korea?source=ds" }
+          .card.plan-image{ style: "background-image: url('../images/plans/img_seacayac.png');" }
+            .text-contrast.va-container
+              .va-middle
+                .h3.strong 親子で1日シーカヤック体験 
+                .h4 オーシャンズ石垣島
+
+    .col.l4
+      %p.strong 石垣島で人気のカテゴリ
+      .col.l6
+        %a.recommend{ href: "#" }グループで遊ぶ　>>
+      .col.l6
+        %a.recommend{ href: "#" }ナイトライフ　>>
+      .col.l6
+        %a.recommend{ href: "#" }ウォータースポーツ　>>
+      .col.l6
+        %a.recommend{ href: "#" }名所観光ツアー　>>
+      .col.l6
+        %a.recommend{ href: "#" }グルメツアー　>>
+      .col.l6
+        %a.recommend{ href: "#" }芸術に触れる　>>
+      .col.l6
+        %a.recommend{ href: "#" }文化に触れる　>>
+      .col.l6
+        %a.recommend{ href: "#" }低価格　>> 
+      .col.l6
+        %a.recommend{ href: "#" }　
+      .col.l6
+        %a.recommend{ href: "#" }　
+    .col.l4    
+      %p.strong あなたにおすすめ
+      .col.l6
+        %a.recommend{ href: "#" }グループで遊ぶ　>>
+      .col.l6
+        %a.recommend{ href: "#" }ナイトライフ　>>
+      .col.l6
+        %a.recommend{ href: "#" }ウォータースポーツ　>>
+      .col.l6
+        %a.recommend{ href: "#" }名所観光ツアー　>>
+      .col.l6
+        %a.recommend{ href: "#" }グルメツアー　>>
+      .col.l6
+        %a.recommend{ href: "#" }芸術に触れる　>>
+      .col.l6
+        %a.recommend{ href: "#" }文化に触れる　>>
+      .col.l6
+        %a.recommend{ href: "#" }低価格　>> 
+      .col.l6
+        %a.recommend{ href: "#" }　
+      .col.l6
+        %a.recommend{ href: "#" }　
 
 :javascript 
   $('.single-item').slick(); 

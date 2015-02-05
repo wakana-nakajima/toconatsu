@@ -7,6 +7,9 @@ footer {
     text-align: center; 
      margin-bottom: 20px; }
 
+    .row-footer {
+      width: 100%; }
+
     .white-text {
         color: #f80079 !important; }
 
